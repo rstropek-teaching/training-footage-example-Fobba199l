@@ -1,9 +1,10 @@
 <div>
   <mat-card>
     <mat-form-field>
-      <input type="text" matInput placeholder="What do you want to find?">
+      <input type="text" name="searchPara" [(ngModel)]="searchPara" matInput placeholder="What do you want to find?">
     </mat-form-field>
-    <button mat-mini-fab color="accent"><mat-icon>search</mat-icon></button>
+    <button mat-mini-fab color="accent" (click)="searchFunc()"><mat-icon>search</mat-icon></button>
+    <h3>{{searchPara}}</h3>
   </mat-card>
 
   <mat-card style="margin-top: 25px">

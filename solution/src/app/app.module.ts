@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {AppComponent} from './app.component';
 import {SearchComponent} from './search/search.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, SearchComponent],
@@ -17,7 +18,7 @@ import {SearchComponent} from './search/search.component';
     // Add the necessary import(s) for Flex Layout
     BrowserModule, BrowserAnimationsModule, MatButtonModule, MatToolbarModule,
     MatIconModule, MatFormFieldModule, MatInputModule, MatDividerModule,
-    MatCardModule, MatListModule, MatDividerModule, FormsModule
+    MatCardModule, MatListModule, MatDividerModule, FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
